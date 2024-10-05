@@ -1,0 +1,401 @@
+
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 70px;
+    font-size: 16px;
+    overflow-x: hidden; /* Prevent horizontal scroll caused by animations */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ebf2fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    height: 70px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color:rgb(4, 1, 49); /* Google Blue */
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: #555;
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header ul li a:hover {
+    background-color: #e6f0ff;
+    border-radius: 5px;
+    color: rgb(4, 1, 49); /* Google Blue on hover */
+}
+
+/* Section Title Styling */
+.section-title {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(45deg, #4285F4, #EA4335, #FBBC05, #34A853);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(120deg, #709116, #93be1c);
+    color: rgb(4, 1, 49);
+    padding: 60px 0;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-content img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 6px solid rgb(196, 196, 196);
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 15px 0;
+    animation: fadeInUp 1.8s ease-in-out;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+/* Removed download resume and contact me buttons and added contact details */
+.hero-contact-details {
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+}
+
+.hero-contact-details span {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+   background-color: #fdf0a6;
+    text-align: center;
+}
+
+.about .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 28px;
+    color: #2e2c2c; /* Google Red */
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about p {
+    font-size: 16px;
+    color: #2e2c2c;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    text-align: justify;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 20px;
+    background-color: #ebeef1;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 28px;
+    color: #2e2c2c; /* Google Yellow */
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.skills ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    animation: fadeInUp 1.8s ease-in-out;
+}
+
+.skills ul li {
+    font-size: 16px;
+    color: #555;
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills ul li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.skills h3{
+    color: #2e2c2c;
+}
+
+/* Experience Section */
+.experience {
+    padding: 50px 20px;
+    background: linear-gradient(to right, #ffffff, #f7f9fc);
+    text-align: center;
+    color:rgb(4, 1, 49);
+}
+
+.experience h2 {
+    font-size: 28px;
+    color: rgb(4, 1, 49); /* Google Green */
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.experience-item {
+    background-color: #f7f9fc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.experience-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.experience-item h3 {
+    font-size: 20px;
+    color: rgb(4, 1, 49);
+    margin-bottom: 10px;
+}
+
+.experience-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    background-color: #c2c4c7;
+    text-align: center;
+   
+}
+
+.projects h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+  
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    animation: fadeInUp 1.8s ease-in-out;
+}
+.project-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Item Hover Colors with Darker Gradients */
+.project-item:nth-child(1):hover {
+    background: linear-gradient(to bottom, #4285F4, #1a56c1); /* Darker blue */
+    color: #ffffff;
+}
+
+.project-item:nth-child(2):hover {
+    background: linear-gradient(to bottom, #EA4335, #b22c1f); /* Darker red */
+    color: #ffffff;
+}
+
+.project-item:nth-child(3):hover {
+    background: linear-gradient(to bottom, #FBBC05, #d7a300); /* Darker yellow */
+    color: #ffffff;
+}
+
+.project-item:nth-child(4):hover {
+    background: linear-gradient(to bottom, #34A853, #237438); /* Darker green */
+    color: #ffffff;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background: linear-gradient(to right, #ffffff, #f7f9fc);
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 32%;
+    gap: 15px;
+    width: 70%;
+}
+
+.contact input, .contact textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact input:focus, .contact textarea:focus {
+    border-color: #4285F4;
+    box-shadow: 0 0 8px rgba(66, 133, 244, 0.3);
+}
+.butt{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.contact button {
+    background-color: #7da118;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 150px;
+    
+}
+
+.contact button:hover {
+    background-color: #6d8d15;
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background-color: #f7f9fc;
+    padding: 15px;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+    0%, 100% {
+        transform: scale(0.95);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}

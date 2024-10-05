@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eshita Talukdar Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header with animated sticky navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Eshita Talukdar</div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-icon"><i class="fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with background animation -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="profile-pic">
+                <img src="profile.jpg" alt="Eshita Talukdar Profile Picture">
+            </div>
+            <h1>Hi, I'm <span>Eshita Talukdar</span></h1>
+            <p>Web Developer | AIML Enthusiast | Tech Student</p>
+            
+        </div>
+        <div class="background-animation">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </section>
+
+    <!-- About Section with scroll animations -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Email: <strong>eshitatalukdar0@gmail.com</strong></p>
+            <p>Phone: <strong>+91 9903109862</strong></p>
+            <p>I'm pursuing a Bachelor of Technology in IT, graduating in 2027. My achievements include departmental rank 5th, SGPA 9.7, YGPA 9.5, 95% in ICSE, and 93% in ISC.</p>
+            <div class="achievements">
+                <div class="achievement-item">
+                    <i class="fas fa-award"></i>
+                    <h3>Academic Excellence</h3>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI/ML Enthusiast</h3>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Full Stack Development</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with progress bars -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>Java</h3>
+                    <div class="progress-bar">
+                        <span class="progress" style="width: 85%"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Data Structures & Algorithms</h3>
+                    <div class="progress-bar">
+                        <span class="progress" style="width: 90%"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Web Development</h3>
+                    <div class="progress-bar">
+                        <span class="progress" style="width: 95%"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section with timeline effect -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Web Developer Intern at Digiswasth | 2024</h3>
+                    
+                    <p>Developed websites, managed software, and created digital marketing strategies.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>AIML Virtual Internship | 2024</h3>
+                    
+                    <p>Worked on AI and ML projects supported by AICTE and Google for Developers.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Postman BootCamp | 2023</h3>
+                    
+                    <p>Built an AI Text Summarizer using API integration during the bootcamp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section with hover effect -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid" class="bg-pjt">
+                <div class="project-item">
+                    <h3>Amazon Clone</h3>
+                    <p>Built a fully functional replica of Amazon using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Netflix Clone</h3>
+                    <p>Created a responsive Netflix clone with advanced UI/UX.</p>
+                </div>
+                <div class="project-item">
+                    <h3>FoodXpress</h3>
+                    <p>Developed a food delivery app using full-stack technologies.</p>
+                </div>
+                <div class="project-item">
+                    <h3>AI Text Summarizer</h3>
+                    <p>App that summarizes texts using API integration with AI capabilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with complex form -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <div class="contact-options">
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe"> Subscribe to newsletter
+                    </label>
+                </div>
+                <div class="butt">
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer with social media icons -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Eshita Talukdar. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Scroll Animation for Sections
+        window.addEventListener('scroll', function () {
+            const sections = document.querySelectorAll('section');
+            const scrollPosition = window.pageYOffset;
+        
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+        
+                if (scrollPosition >= sectionTop - window.innerHeight / 1.5) {
+                    section.classList.add('active');
+                }
+            });
+        });
+        
+        // Skill Bar Animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const skillBars = document.querySelectorAll('.skills ul li');
+            
+            skillBars.forEach((bar, index) => {
+                bar.addEventListener('mouseover', () => {
+                    bar.style.transform = `scale(${1 + index * 0.1})`;
+                    bar.style.transition = 'transform 0.3s ease';
+                });
+                
+                bar.addEventListener('mouseout', () => {
+                    bar.style.transform = 'scale(1)';
+                });
+            });
+        });
+        
+        // Dynamic Project Showcase
+        const projects = document.querySelectorAll('.project-item');
+        projects.forEach(project => {
+            project.addEventListener('click', () => {
+                const overlay = document.createElement('div');
+                overlay.classList.add('project-overlay');
+                overlay.innerHTML = `
+                    <div class="overlay-content">
+                        <h3>${project.querySelector('h3').textContent}</h3>
+                        <p>Loading Project Details...</p>
+                        <button class="close-overlay">Close</button>
+                    </div>
+                `;
+                document.body.appendChild(overlay);
+        
+                document.querySelector('.close-overlay').addEventListener('click', () => {
+                    overlay.remove();
+                });
+            });
+        });
+        
+        // Interactive Contact Form with Validation
+        const form = document.querySelector('.contact form');
+        const inputs = document.querySelectorAll('.contact input, .contact textarea');
+        
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.classList.add('active-input');
+            });
+        
+            input.addEventListener('blur', () => {
+                if (input.value.trim() === "") {
+                    input.classList.remove('active-input');
+                }
+            });
+        });
+        
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            let isValid = true;
+        
+            inputs.forEach(input => {
+                if (input.value.trim() === "") {
+                    isValid = false;
+                    input.classList.add('error');
+                } else {
+                    input.classList.remove('error');
+                }
+            });
+        
+            if (isValid) {
+                alert("Form Submitted Successfully!");
+                form.reset();
+                inputs.forEach(input => input.classList.remove('active-input'));
+            } else {
+                alert("Please fill out all fields!");
+            }
+        });
+        
+        // Progress Bar on Scroll (Gamification Element)
+        window.addEventListener('scroll', function () {
+            const progressBar = document.querySelector('.progress-bar');
+            const windowScroll = document.documentElement.scrollTop;
+            const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollPercentage = (windowScroll / windowHeight) * 100;
+        
+            progressBar.style.width = `${scrollPercentage}%`;
+        });
+        
+        // Typewriter Effect in Hero Section
+        document.addEventListener('DOMContentLoaded', () => {
+            const heroText = document.querySelector('.hero h1');
+            const textArray = heroText.textContent.split('');
+            heroText.textContent = ''; // Clear original text
+        
+            textArray.forEach((char, index) => {
+                setTimeout(() => {
+                    heroText.textContent += char;
+                }, 100 * index);
+            });
+        });
+        </script>
+        
+
+    <script src="scripts.js"></script>
+</body>
+</html>
